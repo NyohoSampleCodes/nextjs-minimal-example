@@ -1,0 +1,29 @@
+#+title: Next.js minimal example
+
+#+begin_src sh
+npm init
+
+npm install next react react-dom --save
+mkdir pages
+#+end_src
+
+Make =pages/index.js=.
+
+#+begin_src js
+import React from 'react'
+export default () => <div>Hello world!</div>
+#+end_src
+
+Add this to =package.json=.
+#+begin_src json
+{
+  "scripts": {
+    "dev": "next"
+  }
+}
+#+end_src
+
+Run =dev=.
+#+begin_src sh
+npm run dev
+#+end_src
